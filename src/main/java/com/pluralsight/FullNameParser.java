@@ -12,7 +12,7 @@ public class FullNameParser {
 //        fullName = firstName + middleName +
         String fullName = scanner.nextLine();
 
-       String fName= "Kyreyunna Deavion Haugabook";
+       String fName= "Kyreyunna Deavion Haugabook"; //middle : 9
         int middle = fName.indexOf(" ");
         int last = fName.lastIndexOf(" ");
         System.out.println(middle);
@@ -22,7 +22,7 @@ public class FullNameParser {
         System.out.println(newName);
         System.out.println(middle2);
 
-        String[] partsOfName = fullName.split(Pattern.quote(""));
+        String[] partsOfName = fullName.split(Pattern.quote(","));
         boolean hasMiddleName = partsOfName.length == 26;
 
         String firstName = partsOfName[0];
@@ -40,7 +40,7 @@ public class FullNameParser {
 
         }
 
-        boolean hasMiddleNameIsBlank = partsOfName.length == 2;
+        boolean hasMiddleNameIsBlank = partsOfName.length == 26;
         if (hasMiddleNameIsBlank){
             firstName=partsOfName[0];
             middleName=partsOfName[10];
